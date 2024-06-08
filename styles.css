@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    margin: 0;padding: 0;
+}
+body
+{
+    background-color: black;
+}
+.main{
+ 
+    position: relative;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7),
+    rgba(0, 0, 0, 0.7)),url(assets/images/IN-en-20240603-popsignuptwoweeks-perspective_alpha_website_large.jpg);
+    background-position: center,center;
+    background-size: max(100vw,1000px);
+}
+.main .box{
+    position:absolute;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    
+}
+nav
+{
+    margin: auto;
+    display: flex;
+    max-width: 80vw;
+    height: 13vh;
+    align-items: center;
+    justify-content: space-between;
+}
+.hero{
+    padding: 23px;
+    height: 80%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  gap: 1.5rem;
+  text-align: center;
+}
+.hero> :first-child{
+    font-weight: bolder;
+    font-size: 48px;
+}
+.hero> :nth-child(2){
+    
+    font-size: 28px;
+}
+.hero> :nth-child(3){
+    
+    font-size: 20px;
+}
+.separate{
+    position: relative;
+    height: 1.2vh;
+    width: 100%;
+    background-color: grey;
+    opacity: 0.6;
+}
+.btn{
+    padding: 8px 23px;
+    background-color: white;
+ border-radius: 5% ;
+    font-weight: bold;
+    color:white;
+    background-color: rgba(0, 0, 0,0.1);
+    border-radius: 5%;
+    border: 0.5px solid white;
+}
+.btn-red{
+background-color: red;
+color: white;
+font-size: larger;
+padding: 10px 15px;
+border-radius: 5%;
+}
+.btn-red-sm{
+    background-color: red;
+    color: white;
+border: 0px;
+}
+div> input{
+    color: white;
+    font-size: larger;
+    padding: 10px 15px;
+    border-radius: 5%;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.first
+{
+   padding:15vh;
+    display: flex;
+    justify-content: center;
+    max-width: 70vw;
+    margin: auto;
+    margin-top: 1.2vh;
+    color: white;
+    align-items: center;
+}
+@media screen and (max-width: 1000px) {
+    .first {
+        padding: 5vw;
+        display: flex;
+    flex-direction: column;
+   
+    }
+    .secimg video{
+        width: 80vw;
+       z-index: -1;
+       top: 4vw;
+       right: 4vw;
+    
+        position: absolute;
+    }
+  }
+
+.secimg{
+    position: relative;
+}
+.secimg img{
+    
+    width:30vw;
+}
+.secimg video{
+    width: 22vw;
+   z-index: -1;
+   top: 4vw;
+   right: 4vw;
+
+    position: absolute;
+}
+.first > div :nth-child(1)
+{
+    font-family: "Roboto", sans-serif;
+    font-size: 48px;
+}
+.first > div :nth-child(2)
+{
+    font-family: "Roboto", sans-serif;
+    font-size: 24px;
+}
+.first :first-child
+{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.third .secimg video{
+    width: 18vw;
+    z-index: -1;
+    top: 2vw;
+    right: 6vw;
+ 
+     position: absolute;
+}
+.faq{
+    padding:7vh;
+}
+.faq h2{
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-size: 40px;
+  margin: 10px;;
+text-align: center;
+}
+.faqbox{
+    padding: 20px;
+    transition: all 1s ease-out;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    color: white;
+    background-color: grey;
+    display: flex;
+    max-width: 60vw;
+    margin: auto;
+    margin-top: 10px;;
+    justify-content: space-between;
+}
+.faqbox:hover{
+    background-color: rgb(50, 48, 48);
+}
+footer
+{
+    color: rgb(195, 184, 184);
+    font-size: 20px;
+    padding: 5vh;
+    max-width: 70vw;
+    margin: auto;
+}
+.gridbox{
+padding: 4vh;
+    display: grid;
+    gap: 4vw;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.gridbox div{
+    gap: 2vh;
+    display: flex;
+    flex-direction:  column;
+}
+.gridbox div a{
+    color: rgb(195, 184, 184);
+}
+footer > :nth-child(1)
+{
+    margin-left: 2.5vw;
+}
